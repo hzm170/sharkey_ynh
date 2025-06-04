@@ -47,13 +47,15 @@ pushd "$install_dir"
     corepack enable
     export CYPRESS_INSTALL_BINARY=0
     ynh_hide_warnings npm install -g corepack@latest
-	ynh_hide_warnings corepack prepare pnpm@latest --activate
-    ynh_hide_warnings ynh_exec_as_app NODE_ENV=production CYPRESS_INSTALL_BINARY=0 NODE_OPTIONS="--max-old-space-size=3000" pnpm add jest-worker minimatch -w
+    ynh_hide_warnings corepack prepare pnpm@latest --activate
+
+    # Fix missing workspace deps manually
+    ynh_hide_warnings ynh_exec_as_app NODE_ENV=production CYPRESS_INSTALL_BINARY=0 NODE_OPTIONS="--max-old-space-size=3000" pnpm add jest-worker minimatch @vue/compiler-core -w
+
     ynh_hide_warnings ynh_exec_as_app NODE_ENV=production CYPRESS_INSTALL_BINARY=0 NODE_OPTIONS="--max-old-space-size=3000" pnpm install --frozen-lockfile
     ynh_hide_warnings ynh_exec_as_app NODE_ENV=production CYPRESS_INSTALL_BINARY=0 NODE_OPTIONS="--max-old-space-size=3000" pnpm build
-	ynh_hide_warnings ynh_exec_as_app pnpm run init
+    ynh_hide_warnings ynh_exec_as_app pnpm run init
 
-	#remove unneeded files
     ynh_hide_warnings ynh_exec_as_app NODE_ENV=production pnpm prune
     ynh_hide_warnings ynh_exec_as_app pnpm store prune
 popd
