@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 <h1>
   <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/sharkey.png" width="32px" alt="Logo of Sharkey">
-  Sharkey, packaged for YunoHost
+  zSocial, packaged for YunoHost Only
 </h1>
 
 Microblogging platform
@@ -30,6 +30,9 @@ The `testing` branch can be tested using:
 ```
 # fresh install:
 sudo yunohost app install https://github.com/YunoHost-Apps/sharkey_ynh/tree/testing
+
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 # upgrade an existing install:
 sudo yunohost app upgrade sharkey -u https://github.com/YunoHost-Apps/sharkey_ynh/tree/testing
