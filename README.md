@@ -20,10 +20,10 @@ Microblogging platform
 
 ```
 # fresh install:
-sudo yunohost app install [https://github.com/hzm170/zSocial.git]
+sudo yunohost app install https://github.com/hzm170/zSocial.git
 
 # upgrade an existing install:
-sudo yunohost app upgrade sharkey -u [https://github.com/hzm170/zSocial.git]
+sudo yunohost app upgrade sharkey -u https://github.com/hzm170/zSocial.git
 ```
 
 ### 📚 App packaging documentation
