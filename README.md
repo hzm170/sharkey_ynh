@@ -20,19 +20,10 @@ Microblogging platform
 
 ## 📦 Developer info
 
-[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/sharkey)](https://ci-apps.yunohost.org/ci/apps/sharkey/)
-
-🛠️ Upstream Sharkey repository: <https://activitypub.software/TransFem-org/Sharkey>
-
-Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/sharkey_ynh/tree/testing).
-
-The `testing` branch can be tested using:
 ```
 # fresh install:
 sudo yunohost app install https://github.com/YunoHost-Apps/sharkey_ynh/tree/testing
 
-
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 # upgrade an existing install:
 sudo yunohost app upgrade sharkey -u https://github.com/YunoHost-Apps/sharkey_ynh/tree/testing
@@ -40,4 +31,6 @@ sudo yunohost app upgrade sharkey -u https://github.com/YunoHost-Apps/sharkey_yn
 
 ### 📚 App packaging documentation
 
-Please see <https://doc.yunohost.org/packaging_apps> for more information.
+Please see # for more information.
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
