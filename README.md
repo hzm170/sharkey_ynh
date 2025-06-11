@@ -13,7 +13,7 @@ Microblogging platform
 
 <div align="center">
 <a href="#"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
-<a href="[https://github.com/YunoHost-Apps/sharkey_ynh/issues](https://github.com/hzm170/zSocial/issues)"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
+<a href="https://github.com/hzm170/zSocial/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
 ## 📦 Developer info
